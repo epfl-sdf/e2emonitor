@@ -27,12 +27,12 @@
           </elementProp>
           <elementProp name="THREAD_LOOP_MAX" elementType="Argument">
             <stringProp name="Argument.name">THREAD_LOOP_MAX</stringProp>
-            <stringProp name="Argument.value">12</stringProp>
+            <stringProp name="Argument.value">5</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="thread_num_u" elementType="Argument">
             <stringProp name="Argument.name">thread_num_u</stringProp>
-            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.value">2</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="finalEmail" elementType="Argument">
@@ -49,7 +49,7 @@
           </elementProp>
           <elementProp name="offset_username" elementType="Argument">
             <stringProp name="Argument.name">offset_username</stringProp>
-            <stringProp name="Argument.value">282</stringProp>
+            <stringProp name="Argument.value">130</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="loop_iterator" elementType="Argument">
@@ -114,7 +114,7 @@
         </ConfigTestElement>
         <hashTree/>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config People.csv" enabled="true">
-          <stringProp name="delimiter">;</stringProp>
+          <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="filename">final_people.csv</stringProp>
           <boolProp name="quotedData">false</boolProp>
@@ -240,7 +240,7 @@ int username = user + offset;
 System.out.println(Integer.toString(username));
 System.out.println(&quot;thread loop = &quot; + vars.get(&quot;thread_loop_counter&quot;) + &quot; threadNum:&quot;+Integer.toString(ctx.getThreadNum()));
 vars.put(&quot;modified_username&quot;, Integer.toString(username));
-vars.put(&quot;finalEmail&quot;, &quot;sdfepfl+&quot;+Integer.toString(username)+&quot;@gmail.com&quot;);</stringProp>
+vars.put(&quot;finalEmail&quot;, &quot;sdfepfl+150731.&quot;+Integer.toString(username)+&quot;@gmail.com&quot;);</stringProp>
                   <stringProp name="TestPlan.comments">FOR SEQUENTIEL 2x2/3x3 BUGGED</stringProp>
                 </BeanShellPreProcessor>
                 <hashTree/>
@@ -596,13 +596,14 @@ System.out.println(&quot;counter_loop = &quot; + test);</stringProp>
                     <boolProp name="XPathExtractor.namespace">false</boolProp>
                   </XPathExtractor>
                   <hashTree/>
-                  <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion Diplm" enabled="true">
+                  <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion Section" enabled="true">
                     <boolProp name="XPath.negate">false</boolProp>
-                    <stringProp name="XPath.xpath">/html/body/div/table/tbody/tr[1]/td[1]/text()=&apos;Diplmant&apos;</stringProp>
+                    <stringProp name="XPath.xpath">/html/body/div/table/tbody/tr[1]/td[1]/text()!=&apos;&apos;</stringProp>
                     <boolProp name="XPath.validate">false</boolProp>
                     <boolProp name="XPath.whitespace">false</boolProp>
                     <boolProp name="XPath.tolerant">true</boolProp>
                     <boolProp name="XPath.namespace">false</boolProp>
+                    <stringProp name="TestPlan.comments">TODO modify</stringProp>
                   </XPathAssertion>
                   <hashTree/>
                   <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion Accompagnant" enabled="true">
