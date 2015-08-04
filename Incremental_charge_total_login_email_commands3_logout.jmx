@@ -27,12 +27,12 @@
           </elementProp>
           <elementProp name="THREAD_LOOP_MAX" elementType="Argument">
             <stringProp name="Argument.name">THREAD_LOOP_MAX</stringProp>
-            <stringProp name="Argument.value">5</stringProp>
+            <stringProp name="Argument.value">10</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="thread_num_u" elementType="Argument">
             <stringProp name="Argument.name">thread_num_u</stringProp>
-            <stringProp name="Argument.value">2</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="finalEmail" elementType="Argument">
@@ -49,7 +49,7 @@
           </elementProp>
           <elementProp name="offset_username" elementType="Argument">
             <stringProp name="Argument.name">offset_username</stringProp>
-            <stringProp name="Argument.value">130</stringProp>
+            <stringProp name="Argument.value">150</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="loop_iterator" elementType="Argument">
@@ -240,7 +240,7 @@ int username = user + offset;
 System.out.println(Integer.toString(username));
 System.out.println(&quot;thread loop = &quot; + vars.get(&quot;thread_loop_counter&quot;) + &quot; threadNum:&quot;+Integer.toString(ctx.getThreadNum()));
 vars.put(&quot;modified_username&quot;, Integer.toString(username));
-vars.put(&quot;finalEmail&quot;, &quot;sdfepfl+150731.&quot;+Integer.toString(username)+&quot;@gmail.com&quot;);</stringProp>
+vars.put(&quot;finalEmail&quot;, &quot;sdfepfl%2b150731.&quot;+Integer.toString(username)+&quot;@gmail.com&quot;);</stringProp>
                   <stringProp name="TestPlan.comments">FOR SEQUENTIEL 2x2/3x3 BUGGED</stringProp>
                 </BeanShellPreProcessor>
                 <hashTree/>
@@ -512,7 +512,7 @@ System.out.println(&quot;counter_loop = &quot; + test);</stringProp>
                     <hashTree/>
                   </hashTree>
                 </hashTree>
-                <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller # tickets commanded test 5/6" enabled="false">
+                <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller # tickets commanded test 5/6" enabled="true">
                   <boolProp name="LoopController.continue_forever">true</boolProp>
                   <stringProp name="LoopController.loops">3</stringProp>
                 </LoopController>
@@ -641,6 +641,51 @@ System.out.println(&quot;counter_loop = &quot; + test);</stringProp>
                     <boolProp name="Assertion.assume_success">false</boolProp>
                     <intProp name="Assertion.test_type">2</intProp>
                   </ResponseAssertion>
+                  <hashTree/>
+                </hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="billetmedia/tickets/sendmail/ POST form" enabled="true">
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                    <collectionProp name="Arguments.arguments">
+                      <elementProp name="csrfmiddlewaretoken" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                        <stringProp name="Argument.value">${CSRF_TOKEN}</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        <stringProp name="Argument.name">csrfmiddlewaretoken</stringProp>
+                      </elementProp>
+                      <elementProp name="form4submit" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                        <stringProp name="Argument.value">Receive all tickets by email</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        <stringProp name="Argument.name">form4submit</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain"></stringProp>
+                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                  <stringProp name="HTTPSampler.path">/tickets/sendmail/</stringProp>
+                  <stringProp name="HTTPSampler.method">POST</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                  <boolProp name="HTTPSampler.monitor">false</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                </HTTPSamplerProxy>
+                <hashTree>
+                  <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion" enabled="true">
+                    <boolProp name="XPath.negate">false</boolProp>
+                    <stringProp name="XPath.xpath">/html/body/div/div[1]/h1/text()=&apos;Billets envoyés avec succès&apos;</stringProp>
+                    <boolProp name="XPath.validate">false</boolProp>
+                    <boolProp name="XPath.whitespace">false</boolProp>
+                    <boolProp name="XPath.tolerant">true</boolProp>
+                    <boolProp name="XPath.namespace">false</boolProp>
+                  </XPathAssertion>
                   <hashTree/>
                 </hashTree>
               </hashTree>
