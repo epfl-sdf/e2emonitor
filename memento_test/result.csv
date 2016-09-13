@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="2818" lt="100" ts="1472391877827" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="419173">
+  <httpSample t="142" lt="100" ts="1472391877827" s="true" lb="http://memento1.epfl.ch//?category=6&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="15323"/>
+  <httpSample t="1580" lt="81" ts="1472391877982" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="152179"/>
+  <httpSample t="53" lt="46" ts="1472391879563" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="9826"/>
+  <httpSample t="1030" lt="46" ts="1472391879616" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="3964" lt="327" ts="1472391878234" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-8" dt="text" by="419182">
+  <httpSample t="462" lt="327" ts="1472391878234" s="true" lb="http://memento1.epfl.ch//?category=9&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-8" dt="text" by="15332"/>
+  <httpSample t="2177" lt="912" ts="1472391878709" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-8" dt="text" by="152179"/>
+  <httpSample t="92" lt="50" ts="1472391880888" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-8" dt="text" by="9826"/>
+  <httpSample t="1219" lt="75" ts="1472391880980" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-8" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="5401" lt="126" ts="1472391877527" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="461713">
+  <httpSample t="207" lt="126" ts="1472391877527" s="true" lb="http://memento1.epfl.ch//?category=5&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="27966"/>
+  <httpSample t="1667" lt="112" ts="1472391877749" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="152179"/>
+  <httpSample t="394" lt="60" ts="1472391879418" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="9826"/>
+  <httpSample t="1233" lt="161" ts="1472391879816" s="true" lb="http://test-memento.epfl.ch/image/7502/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-1" dt="bin" by="6238"/>
+  <httpSample t="135" lt="46" ts="1472391881050" s="true" lb="http://test-memento.epfl.ch/image/7572/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-1" dt="bin" by="4583"/>
+  <httpSample t="62" lt="54" ts="1472391881185" s="true" lb="http://test-memento.epfl.ch/image/7826/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-1" dt="bin" by="5705"/>
+  <httpSample t="57" lt="51" ts="1472391881248" s="true" lb="http://test-memento.epfl.ch/image/7855/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-1" dt="bin" by="5212"/>
+  <httpSample t="57" lt="45" ts="1472391881306" s="true" lb="http://test-memento.epfl.ch/image/7871/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-1" dt="bin" by="8159"/>
+  <httpSample t="1566" lt="43" ts="1472391881363" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="5141" lt="125" ts="1472391878033" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-6" dt="text" by="419173">
+  <httpSample t="200" lt="125" ts="1472391878033" s="true" lb="http://memento1.epfl.ch//?category=6&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-6" dt="text" by="15323"/>
+  <httpSample t="3960" lt="124" ts="1472391878242" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-6" dt="text" by="152179"/>
+  <httpSample t="49" lt="42" ts="1472391882204" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-6" dt="text" by="9826"/>
+  <httpSample t="921" lt="50" ts="1472391882254" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-6" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="5036" lt="111" ts="1472391878435" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-10" dt="text" by="477004">
+  <httpSample t="306" lt="111" ts="1472391878435" s="true" lb="http://memento1.epfl.ch//?category=3&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-10" dt="text" by="40356"/>
+  <httpSample t="2205" lt="485" ts="1472391878755" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-10" dt="text" by="152179"/>
+  <httpSample t="360" lt="81" ts="1472391880962" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-10" dt="text" by="9826"/>
+  <httpSample t="120" lt="114" ts="1472391881326" s="true" lb="http://test-memento.epfl.ch/image/7844/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="5474"/>
+  <httpSample t="65" lt="55" ts="1472391881446" s="true" lb="http://test-memento.epfl.ch/image/7502/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="6237"/>
+  <httpSample t="63" lt="57" ts="1472391881512" s="true" lb="http://test-memento.epfl.ch/image/7572/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="4583"/>
+  <httpSample t="54" lt="47" ts="1472391881576" s="true" lb="http://test-memento.epfl.ch/image/7826/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="5705"/>
+  <httpSample t="53" lt="49" ts="1472391881630" s="true" lb="http://test-memento.epfl.ch/image/7284/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="3064"/>
+  <httpSample t="46" lt="44" ts="1472391881683" s="true" lb="http://test-memento.epfl.ch/image/7539/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="3444"/>
+  <httpSample t="52" lt="44" ts="1472391881729" s="true" lb="http://test-memento.epfl.ch/image/7698/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="4291"/>
+  <httpSample t="1690" lt="43" ts="1472391881782" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-10" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="6284" lt="459" ts="1472391877630" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="477013">
+  <httpSample t="840" lt="459" ts="1472391877630" s="true" lb="http://memento1.epfl.ch//?category=14&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="40365"/>
+  <httpSample t="1465" lt="101" ts="1472391878487" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="152179"/>
+  <httpSample t="169" lt="60" ts="1472391879954" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="9826"/>
+  <httpSample t="112" lt="108" ts="1472391880127" s="true" lb="http://test-memento.epfl.ch/image/7844/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="5474"/>
+  <httpSample t="305" lt="63" ts="1472391880240" s="true" lb="http://test-memento.epfl.ch/image/7502/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="6237"/>
+  <httpSample t="144" lt="50" ts="1472391880545" s="true" lb="http://test-memento.epfl.ch/image/7572/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="4583"/>
+  <httpSample t="60" lt="52" ts="1472391880690" s="true" lb="http://test-memento.epfl.ch/image/7826/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="5705"/>
+  <httpSample t="63" lt="60" ts="1472391880751" s="true" lb="http://test-memento.epfl.ch/image/7284/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="3064"/>
+  <httpSample t="51" lt="46" ts="1472391880815" s="true" lb="http://test-memento.epfl.ch/image/7539/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="3444"/>
+  <httpSample t="47" lt="44" ts="1472391880866" s="true" lb="http://test-memento.epfl.ch/image/7698/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="4291"/>
+  <httpSample t="3002" lt="43" ts="1472391880913" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="6732" lt="486" ts="1472391877732" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="484696">
+  <httpSample t="851" lt="486" ts="1472391877732" s="true" lb="http://memento1.epfl.ch//?category=13&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="36596"/>
+  <httpSample t="2031" lt="110" ts="1472391878593" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="152179"/>
+  <httpSample t="100" lt="43" ts="1472391880626" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="9826"/>
+  <httpSample t="377" lt="77" ts="1472391880726" s="true" lb="http://memento1.epfl.ch//public/img/PDM.png" rc="200" rm="OK" tn="Thread Group 1-3" dt="bin" by="6374"/>
+  <httpSample t="61" lt="56" ts="1472391881103" s="true" lb="http://memento1.epfl.ch//public/img/Exams.png" rc="200" rm="OK" tn="Thread Group 1-3" dt="bin" by="7564"/>
+  <httpSample t="54" lt="49" ts="1472391881165" s="true" lb="http://memento1.epfl.ch//public/img/Arrival.png" rc="200" rm="OK" tn="Thread Group 1-3" dt="bin" by="7401"/>
+  <httpSample t="70" lt="60" ts="1472391881220" s="true" lb="http://memento1.epfl.ch//public/img/Application.png" rc="200" rm="OK" tn="Thread Group 1-3" dt="bin" by="7323"/>
+  <httpSample t="57" lt="47" ts="1472391881291" s="true" lb="http://memento1.epfl.ch//public/img/Bank%20holiday.png" rc="200" rm="OK" tn="Thread Group 1-3" dt="bin" by="7810"/>
+  <httpSample t="73" lt="62" ts="1472391881349" s="true" lb="http://memento1.epfl.ch//public/img/Courses.png" rc="200" rm="OK" tn="Thread Group 1-3" dt="bin" by="7778"/>
+  <httpSample t="3042" lt="55" ts="1472391881423" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="6471" lt="532" ts="1472391878129" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-7" dt="text" by="477013">
+  <httpSample t="958" lt="532" ts="1472391878129" s="true" lb="http://memento1.epfl.ch//?category=11&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-7" dt="text" by="40365"/>
+  <httpSample t="1786" lt="93" ts="1472391879098" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-7" dt="text" by="152179"/>
+  <httpSample t="87" lt="46" ts="1472391880885" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-7" dt="text" by="9826"/>
+  <httpSample t="151" lt="144" ts="1472391880975" s="true" lb="http://test-memento.epfl.ch/image/7844/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="5474"/>
+  <httpSample t="51" lt="44" ts="1472391881126" s="true" lb="http://test-memento.epfl.ch/image/7502/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="6237"/>
+  <httpSample t="52" lt="44" ts="1472391881178" s="true" lb="http://test-memento.epfl.ch/image/7572/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="4583"/>
+  <httpSample t="47" lt="43" ts="1472391881230" s="true" lb="http://test-memento.epfl.ch/image/7826/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="5705"/>
+  <httpSample t="50" lt="45" ts="1472391881278" s="true" lb="http://test-memento.epfl.ch/image/7284/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="3064"/>
+  <httpSample t="58" lt="54" ts="1472391881328" s="true" lb="http://test-memento.epfl.ch/image/7539/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="3444"/>
+  <httpSample t="69" lt="65" ts="1472391881386" s="true" lb="http://test-memento.epfl.ch/image/7698/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="4291"/>
+  <httpSample t="3145" lt="67" ts="1472391881456" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-7" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="8028" lt="102" ts="1472391877936" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="419174">
+  <httpSample t="167" lt="102" ts="1472391877936" s="true" lb="http://memento1.epfl.ch//?category=6&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="15323"/>
+  <httpSample t="7345" lt="133" ts="1472391878109" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="152179"/>
+  <httpSample t="87" lt="80" ts="1472391885456" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="9827"/>
+  <httpSample t="422" lt="45" ts="1472391885543" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="9612" lt="151" ts="1472391878335" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-9" dt="text" by="477005">
+  <httpSample t="754" lt="151" ts="1472391878335" s="true" lb="http://memento1.epfl.ch//?category=3&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-9" dt="text" by="40356"/>
+  <httpSample t="7913" lt="7309" ts="1472391879103" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-9" dt="text" by="152179"/>
+  <httpSample t="88" lt="80" ts="1472391887018" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-9" dt="text" by="9827"/>
+  <httpSample t="81" lt="77" ts="1472391887110" s="true" lb="http://test-memento.epfl.ch/image/7844/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="5474"/>
+  <httpSample t="48" lt="43" ts="1472391887191" s="true" lb="http://test-memento.epfl.ch/image/7502/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="6237"/>
+  <httpSample t="43" lt="40" ts="1472391887239" s="true" lb="http://test-memento.epfl.ch/image/7572/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="4583"/>
+  <httpSample t="46" lt="42" ts="1472391887282" s="true" lb="http://test-memento.epfl.ch/image/7826/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="5705"/>
+  <httpSample t="43" lt="40" ts="1472391887328" s="true" lb="http://test-memento.epfl.ch/image/7284/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="3064"/>
+  <httpSample t="43" lt="41" ts="1472391887371" s="true" lb="http://test-memento.epfl.ch/image/7539/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="3444"/>
+  <httpSample t="43" lt="40" ts="1472391887414" s="true" lb="http://test-memento.epfl.ch/image/7698/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="4291"/>
+  <httpSample t="490" lt="39" ts="1472391887458" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-9" dt="text" by="241845"/>
+</httpSample>
+
+<httpSample t="4180" lt="114" ts="1472391970498" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="484696">
+  <httpSample t="330" lt="114" ts="1472391970498" s="true" lb="http://memento1.epfl.ch//?category=13&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="36596"/>
+  <httpSample t="2039" lt="158" ts="1472391970839" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="152179"/>
+  <httpSample t="76" lt="41" ts="1472391972879" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="9826"/>
+  <httpSample t="46" lt="42" ts="1472391972955" s="true" lb="http://memento1.epfl.ch//public/img/PDM.png" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="6374"/>
+  <httpSample t="49" lt="44" ts="1472391973002" s="true" lb="http://memento1.epfl.ch//public/img/Exams.png" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="7564"/>
+  <httpSample t="51" lt="46" ts="1472391973052" s="true" lb="http://memento1.epfl.ch//public/img/Arrival.png" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="7401"/>
+  <httpSample t="64" lt="55" ts="1472391973104" s="true" lb="http://memento1.epfl.ch//public/img/Application.png" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="7323"/>
+  <httpSample t="53" lt="43" ts="1472391973169" s="true" lb="http://memento1.epfl.ch//public/img/Bank%20holiday.png" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="7810"/>
+  <httpSample t="57" lt="48" ts="1472391973222" s="true" lb="http://memento1.epfl.ch//public/img/Courses.png" rc="200" rm="OK" tn="Thread Group 1-2" dt="bin" by="7778"/>
+  <httpSample t="1399" lt="58" ts="1472391973279" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="4261" lt="357" ts="1472391971103" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-8" dt="text" by="419191">
+  <httpSample t="490" lt="357" ts="1472391971103" s="true" lb="http://memento1.epfl.ch//?category=10&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-8" dt="text" by="15341"/>
+  <httpSample t="744" lt="101" ts="1472391971602" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-8" dt="text" by="152179"/>
+  <httpSample t="113" lt="57" ts="1472391972346" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-8" dt="text" by="9826"/>
+  <httpSample t="2904" lt="59" ts="1472391972460" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-8" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="4555" lt="128" ts="1472391970899" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-6" dt="text" by="419180">
+  <httpSample t="238" lt="128" ts="1472391970899" s="true" lb="http://memento1.epfl.ch//?category=4&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-6" dt="text" by="15330"/>
+  <httpSample t="2577" lt="962" ts="1472391971141" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-6" dt="text" by="152179"/>
+  <httpSample t="291" lt="65" ts="1472391973718" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-6" dt="text" by="9826"/>
+  <httpSample t="1445" lt="44" ts="1472391974009" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-6" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="5974" lt="2326" ts="1472391971002" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-7" dt="text" by="498937">
+  <httpSample t="2617" lt="2326" ts="1472391971002" s="true" lb="http://memento1.epfl.ch//?category=16&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-7" dt="text" by="39437"/>
+  <httpSample t="2181" lt="76" ts="1472391973625" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-7" dt="text" by="152179"/>
+  <httpSample t="80" lt="43" ts="1472391975807" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-7" dt="text" by="9826"/>
+  <httpSample t="124" lt="121" ts="1472391975890" s="true" lb="http://test-memento.epfl.ch/image/7698/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="4292"/>
+  <httpSample t="49" lt="45" ts="1472391976014" s="true" lb="http://test-memento.epfl.ch/image/6727/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="4844"/>
+  <httpSample t="46" lt="43" ts="1472391976063" s="true" lb="http://test-memento.epfl.ch/image/7809/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="4856"/>
+  <httpSample t="49" lt="43" ts="1472391976109" s="true" lb="http://test-memento.epfl.ch/image/7129/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="8025"/>
+  <httpSample t="46" lt="43" ts="1472391976159" s="true" lb="http://test-memento.epfl.ch/image/7868/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="4856"/>
+  <httpSample t="44" lt="41" ts="1472391976206" s="true" lb="http://test-memento.epfl.ch/image/7839/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="4253"/>
+  <httpSample t="45" lt="39" ts="1472391976250" s="true" lb="http://test-memento.epfl.ch/image/7468/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="7111"/>
+  <httpSample t="47" lt="44" ts="1472391976295" s="true" lb="http://test-memento.epfl.ch/image/7755/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="4856"/>
+  <httpSample t="44" lt="41" ts="1472391976343" s="true" lb="http://test-memento.epfl.ch/image/6963/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="4291"/>
+  <httpSample t="41" lt="38" ts="1472391976387" s="true" lb="http://test-memento.epfl.ch/image/6675/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="4253"/>
+  <httpSample t="42" lt="40" ts="1472391976429" s="true" lb="http://test-memento.epfl.ch/image/7798/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-7" dt="bin" by="4013"/>
+  <httpSample t="505" lt="40" ts="1472391976472" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-7" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="6728" lt="151" ts="1472391971201" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-9" dt="text" by="477014">
+  <httpSample t="414" lt="151" ts="1472391971201" s="true" lb="http://memento1.epfl.ch//?category=11&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-9" dt="text" by="40365"/>
+  <httpSample t="5214" lt="106" ts="1472391971625" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-9" dt="text" by="152179"/>
+  <httpSample t="105" lt="93" ts="1472391976840" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-9" dt="text" by="9827"/>
+  <httpSample t="85" lt="81" ts="1472391976951" s="true" lb="http://test-memento.epfl.ch/image/7844/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="5474"/>
+  <httpSample t="47" lt="42" ts="1472391977037" s="true" lb="http://test-memento.epfl.ch/image/7502/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="6237"/>
+  <httpSample t="48" lt="44" ts="1472391977084" s="true" lb="http://test-memento.epfl.ch/image/7572/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="4583"/>
+  <httpSample t="50" lt="46" ts="1472391977133" s="true" lb="http://test-memento.epfl.ch/image/7826/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="5705"/>
+  <httpSample t="45" lt="43" ts="1472391977184" s="true" lb="http://test-memento.epfl.ch/image/7284/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="3064"/>
+  <httpSample t="43" lt="41" ts="1472391977229" s="true" lb="http://test-memento.epfl.ch/image/7539/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="3444"/>
+  <httpSample t="42" lt="40" ts="1472391977272" s="true" lb="http://test-memento.epfl.ch/image/7698/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-9" dt="bin" by="4291"/>
+  <httpSample t="615" lt="41" ts="1472391977315" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-9" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="7466" lt="489" ts="1472391971304" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-10" dt="text" by="517127">
+  <httpSample t="1292" lt="489" ts="1472391971304" s="true" lb="http://memento1.epfl.ch//?category=15&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-10" dt="text" by="49802"/>
+  <httpSample t="4924" lt="145" ts="1472391972604" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-10" dt="text" by="152179"/>
+  <httpSample t="92" lt="84" ts="1472391977529" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-10" dt="text" by="9827"/>
+  <httpSample t="90" lt="89" ts="1472391977629" s="true" lb="http://test-memento.epfl.ch/image/7284/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="3065"/>
+  <httpSample t="48" lt="46" ts="1472391977720" s="true" lb="http://test-memento.epfl.ch/image/7539/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="3444"/>
+  <httpSample t="44" lt="41" ts="1472391977769" s="true" lb="http://test-memento.epfl.ch/image/6403/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="4759"/>
+  <httpSample t="48" lt="45" ts="1472391977814" s="true" lb="http://test-memento.epfl.ch/image/6846/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="4291"/>
+  <httpSample t="47" lt="44" ts="1472391977862" s="true" lb="http://test-memento.epfl.ch/image/6392/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="5288"/>
+  <httpSample t="45" lt="42" ts="1472391977910" s="true" lb="http://test-memento.epfl.ch/image/6404/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="4759"/>
+  <httpSample t="43" lt="40" ts="1472391977956" s="true" lb="http://test-memento.epfl.ch/image/7849/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="4013"/>
+  <httpSample t="43" lt="40" ts="1472391978000" s="true" lb="http://test-memento.epfl.ch/image/6127/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="5108"/>
+  <httpSample t="43" lt="41" ts="1472391978044" s="true" lb="http://test-memento.epfl.ch/image/6151/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="3632"/>
+  <httpSample t="42" lt="39" ts="1472391978088" s="true" lb="http://test-memento.epfl.ch/image/6162/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="5090"/>
+  <httpSample t="43" lt="41" ts="1472391978131" s="true" lb="http://test-memento.epfl.ch/image/7662/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="4239"/>
+  <httpSample t="46" lt="39" ts="1472391978175" s="true" lb="http://test-memento.epfl.ch/image/7825/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="8016"/>
+  <httpSample t="42" lt="40" ts="1472391978221" s="true" lb="http://test-memento.epfl.ch/image/7024/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="3542"/>
+  <httpSample t="43" lt="40" ts="1472391978264" s="true" lb="http://test-memento.epfl.ch/image/6173/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-10" dt="bin" by="4228"/>
+  <httpSample t="463" lt="39" ts="1472391978308" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-10" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="10014" lt="124" ts="1472391970599" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="419183">
+  <httpSample t="527" lt="124" ts="1472391970599" s="true" lb="http://memento1.epfl.ch//?category=9&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="15332"/>
+  <httpSample t="8994" lt="141" ts="1472391971134" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="152179"/>
+  <httpSample t="87" lt="80" ts="1472391980130" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="9827"/>
+  <httpSample t="396" lt="44" ts="1472391980218" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="13987" lt="836" ts="1472391970799" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="649170">
+  <httpSample t="1705" lt="836" ts="1472391970799" s="true" lb="http://memento1.epfl.ch//?category=1&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="92854"/>
+  <httpSample t="9187" lt="121" ts="1472391972519" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="152179"/>
+  <httpSample t="115" lt="101" ts="1472391981708" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="9827"/>
+  <httpSample t="93" lt="85" ts="1472391981827" s="true" lb="http://test-memento.epfl.ch/image/7844/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="5474"/>
+  <httpSample t="777" lt="74" ts="1472391981920" s="true" lb="http://test-memento.epfl.ch/image/7673/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4322"/>
+  <httpSample t="86" lt="49" ts="1472391982698" s="true" lb="http://test-memento.epfl.ch/image/7647/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="5152"/>
+  <httpSample t="55" lt="51" ts="1472391982784" s="true" lb="http://test-memento.epfl.ch/image/6803/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4322"/>
+  <httpSample t="51" lt="47" ts="1472391982840" s="true" lb="http://test-memento.epfl.ch/image/7713/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="5546"/>
+  <httpSample t="44" lt="42" ts="1472391982891" s="true" lb="http://test-memento.epfl.ch/image/7736/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="3779"/>
+  <httpSample t="65" lt="59" ts="1472391982936" s="true" lb="http://test-memento.epfl.ch/image/7829/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="5104"/>
+  <httpSample t="45" lt="41" ts="1472391983001" s="true" lb="http://test-memento.epfl.ch/image/7710/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4775"/>
+  <httpSample t="53" lt="48" ts="1472391983046" s="true" lb="http://test-memento.epfl.ch/image/7689/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="3651"/>
+  <httpSample t="55" lt="46" ts="1472391983100" s="true" lb="http://test-memento.epfl.ch/image/7721/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="6227"/>
+  <httpSample t="52" lt="48" ts="1472391983155" s="true" lb="http://test-memento.epfl.ch/image/7754/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="5205"/>
+  <httpSample t="79" lt="59" ts="1472391983207" s="true" lb="http://test-memento.epfl.ch/image/7706/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="5535"/>
+  <httpSample t="55" lt="52" ts="1472391983287" s="true" lb="http://test-memento.epfl.ch/image/7767/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="5251"/>
+  <httpSample t="48" lt="44" ts="1472391983343" s="true" lb="http://test-memento.epfl.ch/image/7753/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="5367"/>
+  <httpSample t="52" lt="49" ts="1472391983391" s="true" lb="http://test-memento.epfl.ch/image/6805/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4322"/>
+  <httpSample t="47" lt="43" ts="1472391983443" s="true" lb="http://test-memento.epfl.ch/image/7805/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4471"/>
+  <httpSample t="46" lt="41" ts="1472391983490" s="true" lb="http://test-memento.epfl.ch/image/7194/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="6460"/>
+  <httpSample t="55" lt="47" ts="1472391983536" s="true" lb="http://test-memento.epfl.ch/image/7852/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4844"/>
+  <httpSample t="57" lt="52" ts="1472391983591" s="true" lb="http://test-memento.epfl.ch/image/5948/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="5041"/>
+  <httpSample t="54" lt="50" ts="1472391983648" s="true" lb="http://test-memento.epfl.ch/image/7665/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4682"/>
+  <httpSample t="55" lt="48" ts="1472391983703" s="true" lb="http://test-memento.epfl.ch/image/7669/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4686"/>
+  <httpSample t="58" lt="52" ts="1472391983758" s="true" lb="http://test-memento.epfl.ch/image/7632/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4687"/>
+  <httpSample t="59" lt="52" ts="1472391983816" s="true" lb="http://test-memento.epfl.ch/image/7313/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="6206"/>
+  <httpSample t="55" lt="47" ts="1472391983875" s="true" lb="http://test-memento.epfl.ch/image/7674/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4322"/>
+  <httpSample t="48" lt="44" ts="1472391983931" s="true" lb="http://test-memento.epfl.ch/image/7723/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4208"/>
+  <httpSample t="53" lt="51" ts="1472391983980" s="true" lb="http://test-memento.epfl.ch/image/7856/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="3277"/>
+  <httpSample t="44" lt="40" ts="1472391984033" s="true" lb="http://test-memento.epfl.ch/image/7666/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4645"/>
+  <httpSample t="72" lt="68" ts="1472391984077" s="true" lb="http://test-memento.epfl.ch/image/7675/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4990"/>
+  <httpSample t="45" lt="41" ts="1472391984149" s="true" lb="http://test-memento.epfl.ch/image/7784/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="5573"/>
+  <httpSample t="59" lt="56" ts="1472391984194" s="true" lb="http://test-memento.epfl.ch/image/6810/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="4728"/>
+  <httpSample t="44" lt="40" ts="1472391984253" s="true" lb="http://test-memento.epfl.ch/image/7832/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-5" dt="bin" by="5613"/>
+  <httpSample t="489" lt="40" ts="1472391984298" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="15147" lt="141" ts="1472391970702" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="437630">
+  <httpSample t="272" lt="141" ts="1472391970702" s="true" lb="http://memento1.epfl.ch//?category=12&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="33779"/>
+  <httpSample t="14321" lt="10744" ts="1472391970985" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="152179"/>
+  <httpSample t="87" lt="80" ts="1472391985307" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="9827"/>
+  <httpSample t="455" lt="44" ts="1472391985395" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="241845"/>
+</httpSample>
+<httpSample t="34104" lt="355" ts="1472391970394" s="true" lb="Get Page" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="427081">
+  <httpSample t="1233" lt="355" ts="1472391970394" s="true" lb="http://memento1.epfl.ch//?category=8&amp;period=30" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="18108"/>
+  <httpSample t="32183" lt="413" ts="1472391971634" s="true" lb="http://static.epfl.ch/latest/styles/epfl-built.css" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="152179"/>
+  <httpSample t="124" lt="116" ts="1472392003818" s="true" lb="http://memento1.epfl.ch//public/css/memento_responsive.css" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="9827"/>
+  <httpSample t="84" lt="81" ts="1472392003944" s="true" lb="http://test-memento.epfl.ch/image/7862/112x112.jpg" rc="200" rm="OK" tn="Thread Group 1-1" dt="bin" by="5122"/>
+  <httpSample t="471" lt="44" ts="1472392004028" s="true" lb="http://static.epfl.ch/latest/scripts/epfl-jquery-built.js" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="241845"/>
+</httpSample>
+
+</testResults>
