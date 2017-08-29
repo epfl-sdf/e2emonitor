@@ -9,7 +9,7 @@ GREEN='\033[1;32m'
 NOCOL='\033[0m'
 
 if [ $(id -u) != "0" ]; then
-echo -e ${GREEN}$0 "You must be the superuser to run this script" >&2${NOCOL}
+echo -e ${RED}$0 "You must be the superuser to run this script"${NOCOL} >&2
 exit 1
 fi
 
