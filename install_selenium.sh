@@ -29,12 +29,16 @@ else
 fi
 
 
-echo -e ${GREEN}$0 "Installing dependencies needed for selenium"${NOCOL}
+echo -e ${GREEN}$0 "Installing dependencies needed for selenium..."${NOCOL}
 
-apt-get install python3-dev python3-pip
-apt-get install xvfb
-apt-get install firefox
-apt install virtualenv
+echo -e ${GREEN}$0 "Installing python3-dev and pip"${NOCOL}
+apt-get install -y python3-dev python3-pip
+echo -e ${GREEN}$0 "Installing xvfb"${NOCOL}
+apt-get install -y xvfb
+echo -e ${GREEN}$0 "Installing firefox"${NOCOL}
+apt-get install -y firefox
+echo -e ${GREEN}$0 "Installing virtualenv"${NOCOL}
+apt install -y virtualenv
 
 wget https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-linux64.tar.gz
 tar xf geckodriver-v0.18.0-linux64.tar.gz
@@ -46,8 +50,12 @@ fi
 
 virtualenv -p /usr/bin/python3 $virtFold
 source $virtFold/bin/activate
+echo -e ${GREEN}$0 "Installing python package by pip : pillow, numpy, selenium and pyvritualdisplay."${NOCOL}
 pip install pillow
 pip install numpy 
 pip install selenium 
 pip install pyvirtualdisplay
 deactivate
+echo -e ${GREEN}$0 "Clean up"${NOCOL}
+rm "geckodriver-v0.18.0-linux64.tar.gz"
+echo -e ${GREEN}$0 "Selenium and dependencies for scripts are installed. Script is over."${NOCOL}
