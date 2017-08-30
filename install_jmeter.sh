@@ -34,6 +34,25 @@ fi
 
 #### Jmeter latest version
 
+echo -e ${GREEN}$0 "Checking locale machine locale ..."${NOCOL}
 
+vJMETER="3.2"
+downloadJMETERloc="http://mirror.easyname.ch/apache//jmeter/binaries/apache-jmeter-3.2.tgz"
+JMETER="apache-jmeter-3.2"
+echo -e ${GREEN}$0 "Installation Jmeter $vJMETER"${NOCOL}
+echo -e ${GREEN}$0 "Installing JRE 8 headless"${NOCOL}
+apt-get install -y openjdk-8-jre-headless
 
-echo -e ${GREEN}$0 "Installation is over. Script exiting." $vJMETER${NOCOL}
+sudo rm -R /opt/apache-jmeter
+sudo mkdir /opt/apache-jmeter
+cd /opt/apache-jmeter
+
+echo -e ${GREEN}$0 "Downloading Jmeter"${NOCOL}
+wget -c $downloadJMETERloc
+
+echo -e ${GREEN}$0 "Unpacking & installing Jmeter"${NOCOL}
+tar xzf $JMETER.tgz
+sudo rm /usr/bin/jmeter
+sudo ln -s /opt/apache-jmeter/$JMETER/bin/jmeter /usr/bin/jmeter
+
+echo -e ${GREEN}$0 "Install done..."${NOCOL}
