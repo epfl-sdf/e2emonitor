@@ -27,9 +27,13 @@ else
   dpkg-reconfigure --frontend=noninteractive locales
 fi
 
-vJMETER="2.11-5"
-echo -e ${GREEN}$0 "Install JMETER v" $vJMETER${NOCOL}
-apt-get install -y jmeter=$vJMETER
+##### Jmeter apt-get version
+#vJMETER="2.11-5"
+#echo -e ${GREEN}$0 "Install JMETER v" $vJMETER${NOCOL}
+#apt-get install -y jmeter=$vJMETER
+
+#### Jmeter latest version
+
 
 
 echo -e ${GREEN}$0 "Installation is over. Script exiting." $vJMETER${NOCOL}
