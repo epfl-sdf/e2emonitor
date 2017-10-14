@@ -36,9 +36,9 @@ fi
 
 echo -e ${GREEN}$0 "Checking locale machine locale ..."${NOCOL}
 
-vJMETER="3.2"
-downloadJMETERloc="http://mirror.easyname.ch/apache//jmeter/binaries/apache-jmeter-3.2.tgz"
-JMETER="apache-jmeter-3.2"
+vJMETER="3.3"
+downloadJMETERloc="http://mirror.easyname.ch/apache//jmeter/binaries/apache-jmeter-3.3.tgz"
+JMETER="apache-jmeter-3.3"
 echo -e ${GREEN}$0 "Installation Jmeter $vJMETER"${NOCOL}
 echo -e ${GREEN}$0 "Installing JRE 8 headless"${NOCOL}
 apt-get install -y openjdk-8-jre-headless
