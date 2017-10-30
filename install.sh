@@ -18,7 +18,7 @@ sudo apt-get update
 sudo apt-get install datadog-agent
 
 # Copie de l'exemple de configuration en place et connection de la clef API local
-sudo sh -c "sed 's/api_key:.*/api_key: 53e0adf1b5422095790e787a949d54ea/' /etc/dd-agent/datadog.conf.example > /etc/dd-agent/datadog.conf"
+sudo sh -c "sed 's/api_key:.*/api_key: 7293d996b9bd0f79c66e70f5fb4d1c73/' /etc/dd-agent/datadog.conf.example > /etc/dd-agent/datadog.conf"
 
 # Demarrage de l'agent datadog
 sudo /etc/init.d/datadog-agent start
