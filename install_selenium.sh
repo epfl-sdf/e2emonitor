@@ -26,6 +26,8 @@ wget https://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip
 	sudo mv chromedriver /usr/bin/
 	rm chromedriver_linux64.zip
 
+sudo chown -R "$USER:$USER" "$HOME"
+
 ## Installing virtualenv and activate a new environment
 sudo apt install virtualenv
 
