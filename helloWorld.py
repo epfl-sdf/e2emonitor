@@ -10,10 +10,6 @@ class PythonOrgSearch(unittest.TestCase):
 	def setUp(self):
 		self.driver = webdriver.Firefox()
 
-		# Set screen resolution to 1920x 1080  like most laptops
-		display = Display(visible=0, size=(1920, 1080))
-		display.start()
-
 	def test_helloWorld_tequila(self):
 		# now Firefox will run in a virtual display.
 		driver = self.driver
@@ -22,7 +18,7 @@ class PythonOrgSearch(unittest.TestCase):
 		driver.set_window_size(1920, 1080)
 
 		# Open the URL
-		driver.get('128.178.116.97:8000')
+		driver.get('http://e2e-louis-1.sdftests.xyz:8000')
 
 		self.assertIn("Hello world", driver.title)
 		elem_login = driver.find_element_by_link_text('Login')
@@ -43,8 +39,12 @@ class PythonOrgSearch(unittest.TestCase):
 		# quit browser
 		self.driver.close()
 
-		# quit Xvfb display
-		display.stop()
-
 if __name__ == "__main__":
+	# Set screen resolution to 1920x 1080  like most laptops
+	display = Display(visible=0, size=(1920, 1080))
+	display.start()
+
 	unittest.main()
+
+	# quit Xvfb display
+	display.stop()

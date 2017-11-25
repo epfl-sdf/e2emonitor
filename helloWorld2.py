@@ -19,10 +19,11 @@ driver.set_window_size(1920, 1080)
 
 # Open the URL
 driver.get("http://e2e-louis-1.sdftests.xyz:8000")
-
 assert "Hello world" in driver.title
+
 elem_login = driver.find_element_by_link_text("Login")
 elem_login.click()
+#assert "Login" in driver.title
 
 # Login gaspard
 elem_username = driver.find_element_by_id("username")
@@ -30,14 +31,29 @@ elem_username.send_keys("username")
 
 elem_password = driver.find_element_by_id("password")
 elem_password.send_keys("password")
-elem_password.send_keys(Keys.RETURN)
-assert "Logged" in driver.title
 
-driver.save_screenshot("test.png")
-# assert "No results found." not in driver.page_source
+elem_buttonLoggin = driver.find_element_by_id("loginbutton")
+elem_buttonLoggin.click()
+#assert "Logged" in driver.find_element_by_tag_name("h1")
+
+elem_list_shoes = driver.find_element_by_link_text("Liste des chaussures")
+elem_list_shoes.click()
+#assert "Marque" in driver.find_element_by_tag_name("h1")
+
+elem_add_shoe = driver.find_element_by_link_text("Add Shoe")
+elem_add_shoe.click()
+#assert "Brand" in driver.find_element_by_tag_name("h1")
+
+driver.find_element_by_id("id_brand").send_keys("LM_asics")
+driver.find_element_by_id("id_size").send_keys("11")
+driver.find_element_by_id("id_color").send_keys("Ro")
+driver.find_element_by_id("id_shoe_type").send_keys("Co")
+driver.find_element_by_xpath("//input[@value='Submit'][@type='submit']").click()
+
+driver.find_element_by_link_text("Logout").click()
 
 # quit browser
-self.driver.close()
+driver.close()
 
 # quit Xvfb display
 display.stop()
