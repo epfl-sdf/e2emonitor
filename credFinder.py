@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*-coding:Utf-8 -*
 
-# File to return credentials stocked in another secure file
+# File to return credentials stocked in another secured file
 
 import re
 import base64
 
 def returnCred():
 	# Get credentials from MySQL Python Agent config file
-	fid = open('../pythonAgent.conf', 'r')
+	fid = open('/home/ubuntu/pythonAgent.conf', 'r')
 	ConfigFileBody = fid.read()
 	fid.close()
 
