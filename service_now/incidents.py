@@ -15,7 +15,6 @@ from pyvirtualdisplay import Display
 from selenium import webdriver
 
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -33,9 +32,6 @@ def main():
 
 	# Sets the width and height of the current window
 	driver.set_window_size(1920, 1080)
-
-	# Delete all cookies
-	driver.delete_all_cookies()
 
 	# Open the URL
 	driver.get("https://it-test.epfl.ch/backoffice/login.do")
@@ -66,21 +62,17 @@ def main():
 	driver.get("https://it-test.epfl.ch/incident_list.do?sysparm_userpref_module=b55fbec4c0a800090088e83d7ff500de&sysparm_query=stateNOTIN6,7%5eEQ")
 	assert "Incidents" in driver.title
 
-	driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-	WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "timing_network")))
-
 	html_page = driver.page_source
+	testFile = open("testFile.txt", "w")
+	testFile.write(html_page)
+	testFile.close()
 
-#	testFile = open("testFile.txt", "w", encoding="utf-8")
-	times = re.findall(r'Response time\(ms\): [0-9]*, Network: [0-9]*, server: [0-9]*, browser: [0-9]*', html_page)[0]
-	real_times = re.findall(r'[0-9]+', times)
+	network_time = re.findall(r'Network(.*),', html_page)[0]
+	result = open("results.txt", "w")
+	result.write(network_time)
+	result.close()
 
-#	for i in range(0, len(real_times)):
-#		testFile.write(real_times[i])
-#		testFile.write("\n")
-
-#	testFile.close()
-
+	# Logout
 	driver.get("https://it-test.epfl.ch/backoffice/logout.do")
 
 	# quit browser
@@ -89,7 +81,7 @@ def main():
 	# quit Xvfb display
 	display.stop()
 
-	return real_times
+#	return html_page
 
 if __name__ == '__main__':
 	main()

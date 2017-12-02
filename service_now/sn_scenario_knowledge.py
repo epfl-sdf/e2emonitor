@@ -5,6 +5,8 @@
 # File to test scenario on service now
 
 import numpy as np
+import re
+import time
 import sys
 sys.path.insert(0, '/home/ubuntu/e2emonitor/')
 from credFinder import returnCred
@@ -13,53 +15,74 @@ from pyvirtualdisplay import Display
 from selenium import webdriver
 
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Set screen resolution to 1920x 1080  like most laptops
-display = Display(visible=0, size=(1920, 1080))
-display.start()
+def main():
+	# Set screen resolution to 1920x 1080  like most laptops
+	display = Display(visible=0, size=(1920, 1080))
+	display.start()
 
-# now Firefox will run in a virtual display.
-driver = webdriver.Firefox()
+	# now Firefox will run in a virtual display.
+	profile = webdriver.FirefoxProfile()
+	profile.native_events_enabled = True
 
-# Sets the width and height of the current window
-driver.set_window_size(1920, 1080)
+	driver = webdriver.Firefox(profile)
 
-# Open the URL
-driver.get("https://it-test.epfl.ch/backoffice/login.do")
-assert "Gestion des Services Informatiques" in driver.title
+	# Sets the width and height of the current window
+	driver.set_window_size(1920, 1080)
 
-# Set up some credentials
-(USER, PASS) = returnCred()
-sys.path.remove('/home/ubuntu/e2emonitor/')
+	# Delete all cookies
+	driver.delete_all_cookies()
 
-# Send user credential
-user_name = driver.find_element_by_id("user_name")
-user_name.send_keys(USER)
+	# Open the URL
+	driver.get("https://it-test.epfl.ch/backoffice/login.do")
+	assert "Gestion des Services Informatiques" in driver.title
 
-# Send password credential
-user_password = driver.find_element_by_id("user_password")
-user_password.send_keys(PASS)
+	# Set up some credentials
+	(USER, PASS) = returnCred()
+	sys.path.remove('/home/ubuntu/e2emonitor/')
 
-# Uncheck "remember me"
-checkBox = driver.find_element_by_id("remember_me")
+	# Send user credential
+	user_name = driver.find_element_by_id("user_name")
+	user_name.send_keys(USER)
 
-if(checkBox.is_selected()):
-	checkBox.click()
+	# Send password credential
+	user_password = driver.find_element_by_id("user_password")
+	user_password.send_keys(PASS)
 
-# Click login button
-driver.find_element_by_id("sysverb_login").click()
+	# Uncheck "remember me"
+	checkBox = driver.find_element_by_id("remember_me")
 
-# Go to poseidon page
-driver.get("https://it-test.epfl.ch/kb_knowledge_list.do?sysparm_userpref_module=b256b789483e6100dabe57ca0ccf76ec&sysparm_query=u_assignment_groupDYNAMICd6435e965f510100a9ad2572f2b47744%5eEQ")
-assert "Knowledge" in driver.title
+	if(checkBox.is_selected()):
+		checkBox.click()
 
-driver.get("https://it-test.epfl.ch/backoffice/logout.do")
+	# Click login button
+	driver.find_element_by_id("sysverb_login").click()
 
-# quit browser
-driver.quit()
+	# Go to poseidon page
+	driver.get("https://it-test.epfl.ch/kb_knowledge_list.do?sysparm_userpref_module=b256b789483e6100dabe57ca0ccf76ec&sysparm_query=u_assignme$")
+	assert "Knowledge" in driver.title
 
-# quit Xvfb display
-display.stop()
+	driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+	WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "timing_network")))
+
+	html_page = driver.page_source
+
+	times = re.findall(r'Response time\(ms\): [0-9]*, Network: [0-9]*, server: [0-9]*, browser: [0-9]*', html_page)[0]
+	real_times = re.findall(r'[0-9]+', times)
+
+	driver.get("https://it-test.epfl.ch/backoffice/logout.do")
+
+	# quit browser
+	driver.quit()
+
+	# quit Xvfb display
+	display.stop()
+
+	return real_times
+
+if __name__ == '__main__':
+	main()
