@@ -8,10 +8,10 @@ sudo apt-get update
 sudo apt-get upgrade
 
 ## installing differnt program
-sudo apt-get install python3
-sudo apt-get install python3-dev python3-pip
-sudo apt-get install xvfb
-sudo apt-get install firefox
+sudo apt-get install -y python3
+sudo apt-get install -y python3-dev python3-pip
+sudo apt-get install -y xvfb
+sudo apt-get install -y firefox
 
 ## Installing Geckodriver for firefox
 wget https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-linux64.tar.gz

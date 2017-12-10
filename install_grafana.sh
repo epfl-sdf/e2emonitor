@@ -11,6 +11,6 @@ sudo echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" >> /e
 
 #Installer Grafana
 sudo apt-get update
-sudo apt-get install grafana
+sudo apt-get install -y grafana
 
 rm grafana_4.5.2_amd64.deb

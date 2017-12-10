@@ -2,6 +2,8 @@
 virtFold="venv"
 script=$1
 
+python -c 'import selenium; print selenium.__version__'
+
 if [ -z "$1" ]
 then
 	echo "Veuillez indiquer le script a executer"
