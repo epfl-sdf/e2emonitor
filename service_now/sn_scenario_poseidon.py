@@ -20,7 +20,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-def main():
+def returnTimePoseidon():
 	# Set screen resolution to 1920x 1080  like most laptops
 	display = Display(visible=0, size=(1920, 1080))
 	display.start()
@@ -39,6 +39,7 @@ def main():
 
 	# Open the URL
 	driver.get("https://it-test.epfl.ch/backoffice/login.do")
+	driver.implicitly_wait(5)
 	assert "Gestion des Services Informatiques" in driver.title
 
 	# Set up some credentials
@@ -62,8 +63,12 @@ def main():
 	# Click login button
 	driver.find_element_by_id("sysverb_login").click()
 
+	# Save timestamp
+	timestamp = time.strftime('%Y-%m-%dT%H:%M:%S',time.localtime())
+
 	# Go to poseidon page
 	driver.get("https://it-test.epfl.ch/sc_task_list.do?sysparm_userpref_module=a3d5fe9509707900f03b46a6cae72c20&sysparm_view=Poseidon&sysparm$")
+	driver.implicitly_wait(5)
 	assert "Catalog Tasks" in driver.title
 
 	driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -82,7 +87,4 @@ def main():
 	# quit Xvfb display
 	display.stop()
 
-	return all_times
-
-if __name__ == '__main__':
-	main()
+	return timestamp, all_times

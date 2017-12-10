@@ -62,26 +62,24 @@ def main():
 	driver.get("https://it-test.epfl.ch/incident_list.do?sysparm_userpref_module=b55fbec4c0a800090088e83d7ff500de&sysparm_query=stateNOTIN6,7%5eEQ")
 	assert "Incidents" in driver.title
 
-	html_page = driver.page_source
-	testFile = open("testFile.txt", "w")
-	testFile.write(html_page)
-	testFile.close()
+#	html_page = driver.page_source
+#	testFile = open("testFile.txt", "w")
+#	testFile.write(html_page)
+#	testFile.close()
 
-	network_time = re.findall(r'Network(.*),', html_page)[0]
-	result = open("results.txt", "w")
-	result.write(network_time)
-	result.close()
+#	network_time = re.findall(r'Network(.*),', html_page)[0]
+#	result = open("results.txt", "w")
+#	result.write(network_time)
+#	result.close()
 
 	# Logout
 	driver.get("https://it-test.epfl.ch/backoffice/logout.do")
 
 	# quit browser
-	driver.quit()
+#	driver.quit()
 
 	# quit Xvfb display
-	display.stop()
-
-#	return html_page
+#	display.stop()
 
 if __name__ == '__main__':
 	main()

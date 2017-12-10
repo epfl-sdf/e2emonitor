@@ -20,7 +20,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-def main():
+def returnTimeIncidents():
 	# Set screen resolution to 1920x 1080  like most laptops
 	display = Display(visible=0, size=(1920, 1080))
 	display.start()
@@ -39,6 +39,7 @@ def main():
 
 	# Open the URL
 	driver.get("https://it-test.epfl.ch/backoffice/login.do")
+	driver.implicitly_wait(5)
 	assert "Gestion des Services Informatiques" in driver.title
 
 	# Set up some credentials
@@ -62,25 +63,24 @@ def main():
 	# Click login button
 	driver.find_element_by_id("sysverb_login").click()
 
+	# Save timestamp
+	timestamp = time.strftime('%Y-%m-%dT%H:%M:%S',time.localtime())
+
 	# Go to poseidon page
 	driver.get("https://it-test.epfl.ch/incident_list.do?sysparm_userpref_module=b55fbec4c0a800090088e83d7ff500de&sysparm_query=stateNOTIN6,7%5eEQ")
+	driver.implicitly_wait(5)
 	assert "Incidents" in driver.title
 
+	# Save all the time measurment
 	driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 	WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "timing_network")))
 
 	html_page = driver.page_source
 
-#	testFile = open("testFile.txt", "w", encoding="utf-8")
 	times = re.findall(r'Response time\(ms\): [0-9]*, Network: [0-9]*, server: [0-9]*, browser: [0-9]*', html_page)[0]
-	real_times = re.findall(r'[0-9]+', times)
+	all_times = re.findall(r'[0-9]+', times)
 
-#	for i in range(0, len(real_times)):
-#		testFile.write(real_times[i])
-#		testFile.write("\n")
-
-#	testFile.close()
-
+	# Logout
 	driver.get("https://it-test.epfl.ch/backoffice/logout.do")
 
 	# quit browser
@@ -89,7 +89,4 @@ def main():
 	# quit Xvfb display
 	display.stop()
 
-	return real_times
-
-if __name__ == '__main__':
-	main()
+	return timestamp, all_times
