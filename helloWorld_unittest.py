@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*-coding:Utf-8 -*
 
-import numpy as np
 import unittest
 import credFinder
 

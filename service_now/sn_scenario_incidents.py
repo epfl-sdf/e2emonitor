@@ -4,7 +4,6 @@
 
 # File to test scenario on service now
 
-import numpy as np
 import re
 import time
 import sys
@@ -90,3 +89,4 @@ def returnTimeIncidents():
 	display.stop()
 
 	return timestamp, all_times
+

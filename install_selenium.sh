@@ -42,7 +42,6 @@ source $virtFold/bin/activate
 ## Installing selenium and pyvirtualdisplay to emulate a screen
 pip install selenium
 pip install pyvirtualdisplay
-pip install numpy
 
 ## Desactivate virtual environment
 deactivate

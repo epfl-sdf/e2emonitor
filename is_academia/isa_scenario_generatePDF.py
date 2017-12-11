@@ -4,7 +4,6 @@
 
 # File to test scenario on is-academia
 
-import numpy as np
 import re
 
 from pyvirtualdisplay import Display
