@@ -4,14 +4,19 @@
 
 virtFold="venv"
 
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+
 sudo apt-get update
 sudo apt-get upgrade
 
-## installing differnt program
+## installing different program
 sudo apt-get install -y python3
 sudo apt-get install -y python3-dev python3-pip
 sudo apt-get install -y xvfb
 sudo apt-get install -y firefox
+
+pip install setuptools
 
 ## Installing Geckodriver for firefox
 wget https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-linux64.tar.gz

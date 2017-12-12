@@ -4,8 +4,6 @@
 
 # File to test scenario on is-academia
 
-import re
-
 from pyvirtualdisplay import Display
 from selenium import webdriver
 
