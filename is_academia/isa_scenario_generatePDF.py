@@ -4,6 +4,8 @@
 
 # File to test scenario on is-academia
 
+import time
+
 from pyvirtualdisplay import Display
 from selenium import webdriver
 
@@ -45,7 +47,7 @@ Select(driver.find_element_by_name("ww_x_HIVERETE")).select_by_visible_text("Sem
 okButton = driver.find_element_by_name("dummy")
 okButton.click()
 
-driver.save_screenshot("test.png")
+driver.save_screenshot("test_ok.png")
 
 # Select Algebre lineaire pour CMS
 WebDriverWait(driver,20).until(lambda driver: driver.find_element_by_xpath("/html/body/div[2]/table/tbody/tr[5]/td/a"))
@@ -55,6 +57,9 @@ driver.find_element_by_xpath("/html/body/div[2]/table/tbody/tr[5]/td/a").click()
 driver.switch_to_default_content()
 frame = driver.find_element_by_name("principal")
 driver.switch_to.frame(frame)
+
+time.sleep(5)
+driver.save_screenshot("test_pdf.png")
 
 # quit browser
 driver.quit()

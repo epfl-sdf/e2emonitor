@@ -4,6 +4,8 @@
 
 # File to test scenario on is-academia
 
+import time
+
 from pyvirtualdisplay import Display
 from selenium import webdriver
 
@@ -48,6 +50,8 @@ Select(driver.find_element_by_name("ww_x_CLASSE")).select_by_visible_text("CMS 1
 okButton = driver.find_element_by_name("dummy")
 okButton.click()
 
+driver.save_screenshot("test_ok.png")
+
 # Select Algebre lineaire pour CMS
 WebDriverWait(driver,10).until(lambda driver: driver.find_element_by_xpath("/html/body/div[2]/table/tbody/tr[2]/td/a"))
 driver.find_element_by_xpath("/html/body/div[2]/table/tbody/tr[2]/td/a").click()
@@ -60,7 +64,8 @@ driver.switch_to.frame(frame)
 # Test if we have data
 text_found = re.search(r'Semestre.automne', driver.page_source)
 
-driver.save_screenshot("test.png")
+time.sleep(5)
+driver.save_screenshot("test_list.png")
 
 # quit browser
 driver.quit()
